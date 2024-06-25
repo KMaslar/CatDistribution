@@ -1,0 +1,11 @@
+framework module CatFramework {
+  umbrella header "CatFramework.h"
+  export *
+
+  module * { export * }
+}
+
+module CatFramework.Swift {
+  header "CatFramework-Swift.h"
+  requires objc
+}
